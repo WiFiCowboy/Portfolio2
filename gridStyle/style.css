@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+}
+/* Mobile Style */
+@media only screen and (max-width: 425px) {
+
+  .mainPage {
+    height: 100vh; /* Fills the whole height */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    background-color: aquamarine;
+   /* Figure this out */
+    grid-template-areas:
+      "navbar"
+      "headline"
+      "image"
+      "button";
+  }
+  .navBar {
+    grid-area: 1 / 1 / 2 / 6;
+    background-color: red;
+  }
+  .headline {
+    grid-area: 2 / 2 / 3 / 5;
+    background-color: yellow;
+  }
+  .myImage {
+    grid-area: 3 / 2 / 5 / 5;
+    background-color: chartreuse;
+  }
+  .projectButton {
+    grid-area: 5 / 2 / 6 / 5;
+    background-color: slategray;
+  }
+
+  .projectsPage {
+    height: 100vh;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr) 2fr repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 18px;
+  }
+
+  .navBar {
+    grid-area: 1 / 1 / 2 / 6;
+    background-color: red;
+  }
+
+  .pageTitle {
+    grid-area: 2 / 2 / 3 / 5;
+    background-color: blueviolet;
+  }
+  .projectImage {
+    grid-area: 3 / 2 / 5 / 5;
+    background-color: yellow;
+  }
+  .projectTitle {
+    bottom: 0px;
+    grid-area: 4 / 2 / 5 / 5;
+    background-color: chartreuse;
+  }
+  .projectLinks {
+    grid-area: 5 / 2 / 6 / 5;
+    background-color: slategray;
+  }
+}
+
+div.projectImage {
+    position: relative;
+}
+
+div.projectImage.projectTitle {
+    position: absolute;
+}

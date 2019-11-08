@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  line-height: 24px;
+  /* background-color: rgb(196, 196, 196); */
+}
+
+nav {
+  background-color: rgb(94, 93, 93);
+  padding: 1% 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* Use Z-index to specifiy stack order i.e. < # = lower stack order */
+  z-index: 10;
+}
+
+header {
+  padding: 3% 0;
+}
+
+h1 {
+  font-family: "Vollkorn", serif;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: rgb(161, 161, 161);
+}
+
+section:nth-child(even) {
+  background-color: rgb(92, 92, 92);
+}
+.mainPage, .projectPage, .aboutMePage {
+    border: 2px solid black;
+}
+
+/* Style for mobile */
+@media screen and (max-width: 500px) {
+  header {
+    padding: 3% 0;
+  }
+
+  section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: rgb(92, 92, 92);
+  }
+
+  .top, .mid, .bottom:nth-child(even) {
+    background-color: rgb(161, 161, 161);
+  }
+
+  .mainPage, .projectPage, .aboutMePage {
+      height: 100vh;
+  }
+}
