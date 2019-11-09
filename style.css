@@ -85,7 +85,7 @@ h1 {
 }
 
 section {
-  min-height: 200px;
+  /* min-height: 200px; */
   padding: 6% 0;
   background-color: rgb(161, 161, 161);
 }
@@ -93,6 +93,8 @@ section {
 section:nth-child(even) {
   background-color: rgb(92, 92, 92);
 }
+
+/* place holder for refrence delete when done */
 .mainPage,
 .projectPage,
 .aboutMePage {
@@ -106,9 +108,49 @@ section:nth-child(even) {
   }
 
   section {
-    min-height: 200px;
-    padding: 6% 0;
+    /* min-height: 200px; */
+    padding: 1% 0;
     background-color: rgb(92, 92, 92);
+  }
+
+  .selfImage {
+    background-size: cover;
+    border-radius:50% 50% 50% 50%;
+    width:150px;
+    height:150px;
+    margin-top: 20px;
+  }
+
+  .headline {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 300;
+    padding: 0px 10px 0px 5px;
+  }
+
+  .myProjects {
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+    background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+    background-color:#768d87;
+    border-radius:5px;
+    border:1px solid #566963;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:11px 23px;
+    text-decoration:none;
+    text-shadow:0px -1px 0px #2b665e;
+  }
+  .myProjects:hover {
+    background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+    background-color:#6c7c7c;
+  }
+  .myProjects:active {
+    position:relative;
+    top:1px;
   }
 
   .top,
