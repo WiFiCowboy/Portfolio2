@@ -115,7 +115,7 @@ section:nth-child(even) {
   section {
     /* min-height: 200px; */
     padding: 1% 0;
-    background-color: rgb(92, 92, 92);
+ 
   }
 
   .mainPage {
@@ -176,12 +176,19 @@ section:nth-child(even) {
     margin-top: 10px;
     /* margin-bottom: 40px; */
   }
-  
-  .top,
-  .mid,
-  .bottom:nth-child(even) {
-    background-color: rgb(161, 161, 161);
+
+  p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 10px;
   }
+
+  footer {
+    font-size: 14px;
+  }
+
+  
 
   .mainPage,
   .projectPage,
@@ -194,7 +201,7 @@ section:nth-child(even) {
   }
 }
 
-
+/* Style for desktop */
 @media only screen and (max-width: 1025px) {
   .burger-menu {
     display: inline-block;
