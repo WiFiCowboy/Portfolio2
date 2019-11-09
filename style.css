@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+/* test */
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 body {
   font-family: "Exo", sans-serif;
@@ -113,19 +118,28 @@ section:nth-child(even) {
     background-color: rgb(92, 92, 92);
   }
 
+  .mainPage {
+    min-height: 100%;
+    margin-top: 50px;
+  }
+
+  .mobileImg{
+    /* height: auto; */
+  }
   .selfImage {
     background-size: cover;
     border-radius:50% 50% 50% 50%;
-    width:150px;
-    height:150px;
+    width:200px;
+    height:200px;
     margin-top: 20px;
   }
 
   .headline {
-    font-size: 16px;
+    font-size: 24px;
     text-align: left;
     font-weight: 300;
-    padding: 0px 10px 0px 5px;
+    line-height: 30px;
+    padding: 0px 5px 0px 20px;
   }
 
   .myProjects {
@@ -201,6 +215,10 @@ section:nth-child(even) {
     /* height: 100vh; */
   }
 
+  .selfImage {
+    width: 50%;
+    height: auto;
+  }
   .dskTopHeadline {
     grid-area: 1 / 1 / 2 / 3;
   }
