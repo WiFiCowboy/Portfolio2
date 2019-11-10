@@ -99,12 +99,6 @@ section:nth-child(even) {
   background-color: rgb(92, 92, 92);
 }
 
-/* place holder for refrence delete when done */
-.mainPage,
-.projectPage,
-.aboutMePage {
-  border: 2px solid black;
-}
 
 /* Style for mobile */
 @media screen and (max-width: 500px) {
@@ -128,11 +122,11 @@ section:nth-child(even) {
   }
   .selfImage {
     background-size: cover;
-    border-radius:10% 10% 10% 10%;
-    width:200px;
-    height:200px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    border-radius: 10% 10% 10% 10%;
+    width:300px;
+    height:300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .headline {
@@ -143,6 +137,16 @@ section:nth-child(even) {
     padding: 0px 5px 0px 20px;
   }
 
+  .pageTitle {
+    text-align: center;
+    margin: auto;
+    width: 250px;
+    height: auto;
+    border-radius: 15px 15px 15px 15px;
+  }
+  section.pageTitle {
+    margin-bottom: 10px;
+  }
   .myProjects {
     box-shadow:inset 0px 1px 3px 0px #91b8b3;
     background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
@@ -168,13 +172,60 @@ section:nth-child(even) {
     top:1px;
   }
 
+  .projectImgWrapper {
+    width: 250px;
+    margin: auto;
+    border-radius: 15px 15px 15px 15px;
+  }
+
   #quizAppImg {
     background-size: cover;
     /* border-radius:10% 0% 0% 0%; */
     width:200px;
-    height:200px;
+    height:300px;
     margin-top: 10px;
     /* margin-bottom: 40px; */
+  }
+  /* Fix this to center title */
+  .mobileProjectTitle {
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    border-radius: 0px 0px 15px 15px;
+    
+  }
+  /* Fix this to center title */
+  h3.mobileProjectTitle {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  section.mobileTechDisplay, .mobileRepoLive {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .mobileTechDisplay, .mobileRepoLive {
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .devicon-html5-plain-wordmark, 
+  .devicon-css3-plain-wordmark,
+  .devicon-javascript-plain,
+  .devicon-jquery-plain-wordmark,
+  .devicon-github-plain-wordmark,
+  .fas {
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  div.projectPage {
+    margin-bottom: 20px;
+    height: 650px;
   }
 
   p {
