@@ -92,11 +92,11 @@ h1, h2 {
 section {
   /* min-height: 200px; */
   padding: 6% 0;
-  background-color: rgb(161, 161, 161);
+  /* background-color: rgb(161, 161, 161); */
 }
 
 section:nth-child(even) {
-  background-color: rgb(92, 92, 92);
+  /* background-color: rgb(92, 92, 92); */
 }
 
 
@@ -106,10 +106,15 @@ section:nth-child(even) {
     padding: 3% 0;
   }
 
+  main {
+    background-image: url(assests/hero.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+  }
+
   section {
-    /* min-height: 200px; */
     padding: 1% 0;
- 
   }
 
   .mainPage {
@@ -117,16 +122,13 @@ section:nth-child(even) {
     margin-top: 50px;
   }
 
-  .mobileImg{
-    /* height: auto; */
-  }
   .selfImage {
-    background-size: cover;
     border-radius: 10% 10% 10% 10%;
     width:300px;
     height:300px;
     margin-top: 10px;
     margin-bottom: 10px;
+    object-fit: cover;
   }
 
   .headline {
@@ -223,23 +225,42 @@ section:nth-child(even) {
     padding: 5px;
   }
 
+  div.projectPage > section {
+    background-color: rgb(161, 161, 161);
+  }
+
   div.projectPage {
     margin-bottom: 20px;
     height: 650px;
   }
 
+  div.mobileAboutMe {
+    margin: auto;
+    border-radius: 15px 15px 15px 15px;
+    width: 320px;
+    height: 800px;
+    background-color: rgb(161, 161, 161);
+  }
+
   p {
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 900;
     line-height: 26px;
     padding: 10px;
   }
 
-  footer {
-    font-size: 14px;
+  section.mobileContactIcons {
+    width: 300px;
+    margin: auto;
+    border-radius: 15px 15px 15px 15px;
+    background-color: rgb(161, 161, 161);
   }
 
-  
+  .fa-linkedin-in {
+    margin: 0px 40px;
+
+  }
 
   .mainPage,
   .projectPage,
