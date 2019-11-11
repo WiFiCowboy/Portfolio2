@@ -239,7 +239,8 @@ section:nth-child(even) {
     border-radius: 15px 15px 15px 15px;
     width: 320px;
     height: 800px;
-    background-color: rgb(161, 161, 161);
+    /* use this color for background on containers */
+    background-color: rgb(216, 210, 210);
   }
 
   p {
@@ -295,6 +296,62 @@ section:nth-child(even) {
     display: none;
   }
 
+  section {
+    background-color: rgb(92, 92, 92);
+  }
+
+  section:nth-child(even) {
+    background-color: rgb(49, 45, 45);
+  }
+
+  .headline {
+    font-size: 38px;
+    text-align: left;
+    font-weight: 300;
+    line-height: 48px;
+    padding-left: 50px;
+  }
+
+  .selfImage {
+    width: 50%;
+    height: auto;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  section.dskTopBio {
+    background-color:  rgb(216, 210, 210);
+    margin: auto;
+    width: 550px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  section.dskTopBio > h2 {
+    margin: 0px;
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  section.dskTopBio > p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 0px 20px;
+  }
+
+  section.dskTopContactIcons {
+    background-color:  rgb(216, 210, 210);
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  section.dskTopContactIcons > i {
+      font-size: 50px;
+      padding: 0px 40px;
+      color: #636261;
+  }
+
   .mainPage {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -304,10 +361,7 @@ section:nth-child(even) {
     /* height: 100vh; */
   }
 
-  .selfImage {
-    width: 50%;
-    height: auto;
-  }
+ 
   .dskTopHeadline {
     grid-area: 1 / 1 / 2 / 3;
   }
