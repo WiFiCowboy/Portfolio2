@@ -21,15 +21,15 @@
   </head>
   <body>
     <div class="nav-container">
-      <nav role="navigation">
+      <nav role="navigation navbar-collapse">
         <input type="checkbox" id="nav-toggle" />
         <label for="nav-toggle" class="burger-menu">
           <i class="fas fa-bars"></i>
         </label>
         <div class="left-menu">
-          <a href="#">Home</a>
-          <a href="#">Projects</a>
-          <a href="#">About Me</a>
+          <a href="#mainH1">Home</a>
+          <a href="#projectSection">Projects</a>
+          <a class="mobileVeiwAboutMe" href="#aboutH2">About Me</a>
         </div>
         <!-- placholder remove when done  -->
         <!-- <a href="#" class="logo">Logo</a> -->
@@ -42,7 +42,7 @@
         <!-- <h1>Hero</h1> -->
       </header>
 
-      <div class="mainPage">
+      <div id="mainH1" class="mainPage">
         <section class="top dskTopHeadline">
           <h1 class="headline">
             Hello, My name is Humberto Hernandez. I’m a full-stack developer and
@@ -84,9 +84,12 @@
 
         <Section class="top desktopVeiw dskTopContactIcons">
           <!-- Icons to GitHub, Linkedin, Email -->
-          <i class="devicon-github-plain-wordmark"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fas fa-envelope"></i>
+          <a href="https://github.com/WiFiCowboy"><i class="devicon-github-plain-wordmark js-gitHubAcct"></i></a>
+          <a href="https://www.linkedin.com/in/humberto-hernandez-12081b132/"><i class="fab fa-linkedin-in js-linkdin"></i></a>
+          <a href="mailto:"><i class="fas fa-envelope js-email"></i></a>
+          
+          
+          
         </Section>
 
         <!-- Place holder if needed -->
@@ -95,11 +98,11 @@
         </section> -->
 
         <section class="top mobileView">
-          <a href="#" class="myProjects">Projects</a>
+          <a href="#projectSection" class="myProjects">Projects</a>
         </section>
       </div>
 
-      <div class="projectPage">
+      <div id="projectSection" class="projectPage">
         <section class="mid mobileView pageTitle">
           <h2>My Projects</h2>
         </section>
@@ -135,13 +138,12 @@
         </section>
 
         <section class="mid dskTopRepoLinks mobileRepoLive">
-          <i class="devicon-github-plain-wordmark"></i>
-          <!-- placeholder might not need icon -->
-          <i class="fas fa-play-circle"></i>
+          <a href="https://github.com/WiFiCowboy/HTML-wireframe"><i class="devicon-github-plain-wordmark js-gitHubQuizRepo"></i></a>
+          <a href="https://wificowboy.github.io/HTML-wireframe/"><i class="fas fa-play-circle js-liveApp"></i></a>
         </section>
       </div>
 
-      <div class="aboutMePage mobileAboutMe">
+      <div id="aboutH2" class="aboutMePage mobileAboutMe">
         <section class="bottom mobileView">
           <h2>About Me</h2>
         </section>
@@ -168,9 +170,9 @@
 
         <Section class="bottom mobileView mobileContactIcons">
           <!-- Icons to GitHub, Linkedin, Email -->
-          <i class="devicon-github-plain-wordmark"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fas fa-envelope"></i>
+          <a href="https://github.com/WiFiCowboy"><i class="devicon-github-plain-wordmark js-gitHubAcct"></i></a>
+          <a href="https://www.linkedin.com/in/humberto-hernandez-12081b132/"><i class="fab fa-linkedin-in js-linkdin"></i></a>
+          <a href="mailto:"><i class="fas fa-envelope js-email"></i></a>
         </Section>
 
         <section class="bottom mobileView">
@@ -179,6 +181,7 @@
       </div>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>

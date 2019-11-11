@@ -13,12 +13,9 @@ body {
   color: black;
   text-align: center;
   line-height: 24px;
-  background-image: url(assests/hero.jpeg);
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #889188;
 }
+
 
 .nav-container {
   width: 100%;
@@ -198,6 +195,13 @@ section {
     padding: 20px;
   }
 
+
+  section.mobileRepoLive > a {
+    font-size: 20px;
+    color: #636261;
+    text-decoration: none;
+  }
+
   section.mobileTechDisplay, .mobileRepoLive {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -254,6 +258,12 @@ section {
     background-color: rgb(216, 210, 210);
   }
 
+  section.mobileContactIcons > a{
+    font-size: 20px;
+    color: #636261;
+    text-decoration: none;
+  }
+
   .fa-linkedin-in {
     margin: 0px 40px;
 
@@ -289,6 +299,10 @@ section {
 /* Style for Desktop */
 @media screen and (min-width: 501px) {
   .mobileView {
+    display: none;
+  }
+
+  div.left-menu > a.mobileVeiwAboutMe {
     display: none;
   }
 
@@ -346,7 +360,7 @@ section {
     border-radius: 15px 15px 15px 15px;
   }
 
-  section.dskTopContactIcons > i {
+  section.dskTopContactIcons > a {
       font-size: 50px;
       padding: 0px 40px;
       color: #636261;
@@ -410,7 +424,7 @@ section {
     justify-content: space-evenly;
   }
 
-  section.dskTopRepoLinks > i {
+  section.dskTopRepoLinks > a {
     font-size: 50px;
     padding: 0px 20px;
     flex-direction: row;
