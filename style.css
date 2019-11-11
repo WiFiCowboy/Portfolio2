@@ -13,7 +13,11 @@ body {
   color: black;
   text-align: center;
   line-height: 24px;
-  /* background-color: rgb(196, 196, 196); */
+  background-image: url(assests/hero.jpeg);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nav-container {
@@ -90,15 +94,8 @@ h1, h2 {
 }
 
 section {
-  /* min-height: 200px; */
-  padding: 6% 0;
-  /* background-color: rgb(161, 161, 161); */
+  padding: 4% 0;
 }
-
-section:nth-child(even) {
-  /* background-color: rgb(92, 92, 92); */
-}
-
 
 /* Style for mobile */
 @media screen and (max-width: 500px) {
@@ -107,10 +104,9 @@ section:nth-child(even) {
   }
 
   main {
-    background-image: url(assests/hero.jpeg);
+    /* background-image: url(assests/hero.jpeg); */
     background-position: center center;
     background-repeat: no-repeat;
-    /* background-size: contain; */
   }
 
   section {
@@ -157,7 +153,7 @@ section:nth-child(even) {
     border:1px solid #566963;
     display:inline-block;
     cursor:pointer;
-    color:#ffffff;
+    color:black;
     font-family:Arial;
     font-size:15px;
     font-weight:bold;
@@ -226,7 +222,7 @@ section:nth-child(even) {
   }
 
   div.projectPage > section {
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(216, 210, 210);
   }
 
   div.projectPage {
@@ -255,7 +251,7 @@ section:nth-child(even) {
     width: 300px;
     margin: auto;
     border-radius: 15px 15px 15px 15px;
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(216, 210, 210);
   }
 
   .fa-linkedin-in {
@@ -297,11 +293,15 @@ section:nth-child(even) {
   }
 
   section {
-    background-color: rgb(92, 92, 92);
+    background-color:  rgb(216, 210, 210);
   }
 
-  section:nth-child(even) {
-    background-color: rgb(49, 45, 45);
+  section.dskTopHeadline, section.dskTopMyImage {
+    background-color: transparent;
+  }
+
+  h1, h2, h3 {
+    font-family: "Vollkorn", serif;
   }
 
   .headline {
@@ -352,6 +352,73 @@ section:nth-child(even) {
       color: #636261;
   }
 
+  section.dskTopProjectImage {
+    background-color: rgb(216, 210, 210);
+    width: 400px;
+    margin: auto;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  section.dskTopDispTech{
+    width: 200px;
+    height: 500px;
+    margin-right: 400px;
+    margin-top: 100px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+
+  section.dskTopProjectInfo > h2 {
+    margin: 0px;
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  section.dskTopProjectInfo > p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 0px 20px;
+  }
+  
+  section.dskTopDispTech > i {
+    background-color: rgb(216, 210, 210);
+    display: block;
+    font-size: 50px;
+    padding: 20px 0px;
+    color: #636261;
+  }
+
+  section.dskTopDispTech > h2 {
+    background-color: rgb(216, 210, 210);
+  }
+
+  section.dskTopProjectInfo{
+    background-color: rgb(216, 210, 210);
+    width: 500px;
+    margin: auto;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  section.dskTopRepoLinks {
+    background-color: rgb(216, 210, 210);
+    display: flex;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: space-evenly;
+  }
+
+  section.dskTopRepoLinks > i {
+    font-size: 50px;
+    padding: 0px 20px;
+    flex-direction: row;
+    color: #636261;
+
+  }
+
+  /* CSS Grid layout */
   .mainPage {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -384,7 +451,7 @@ section:nth-child(even) {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 100vh;
+    /* height: 100vh; */
   }
   .dskTopProjectImage {
     grid-area: 1 / 1 / 3 / 3;
