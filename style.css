@@ -1,13 +1,21 @@
-/* mobile first styles */
+/* start mobile first styles */
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Vollkorn", serif;
 }
 
+p {
+  font-family: "Exo", sans-serif;
+}
+
+/* start navbar style */
 .nav-container {
   width: 100%;
   position: fixed;
@@ -30,7 +38,8 @@ nav {
   grid-column: 2;
 }
 
-#nav-toggle, .burger-menu {
+#nav-toggle,
+.burger-menu {
   display: none;
 }
 
@@ -46,11 +55,11 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Exo", sans-serif;
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 nav a:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .left-menu a {
@@ -70,10 +79,11 @@ nav a:hover {
   grid-column: 1;
   align-self: center;
 }
+/* end navbar style */
 
 /* for testing */
 main {
-  background-color: hotpink;
+  background-color: grey;
 }
 
 /* main page */
@@ -83,19 +93,118 @@ div.mainPage {
 }
 
 section.headline h1 {
-    font-size: 24px;
-    text-align: left;
-    font-weight: 300;
-    line-height: 30px;
-    padding: 0px 5px 0px 20px;
+  font-size: 24px;
+  text-align: left;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 0px 5px;
+}
+
+section.myImage {
+  display: flex;
+  justify-content: space-around;
 }
 
 .selfImage {
   border-radius: 10% 10% 10% 10%;
-  width:280px;
-  height:300px;
+  width: 300px;
+  height: 300px;
   padding: 0px 5px;
   margin-top: 10px;
   margin-bottom: 10px;
   object-fit: cover;
+}
+
+/* projects page */
+div.ProjectPage {
+  margin: 10px 5px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgb(216, 210, 210);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+section.projectImage {
+  background-color: #b5b8b7;
+  padding: 5px 10px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#quizAppImg {
+  background-size: cover;
+  width: 200px;
+  height: 300px;
+  margin-top: 10px;
+}
+
+section.displayTech {
+  padding: 10px 0px;
+}
+
+.devicon-html5-plain-wordmark,
+.devicon-css3-plain-wordmark,
+.devicon-javascript-plain,
+.devicon-jquery-plain-wordmark,
+.devicon-github-plain-wordmark,
+.fas {
+  font-size: 30px;
+  padding: 5px;
+}
+
+section.repoAndLive {
+  padding: 5px;
+  margin: 5px 0px;
+  background-color: #b5b8b7;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.repoAndLive a:hover {
+  color: rgba(41, 153, 37, 0.925);
+}
+
+section.repoAndLive > a {
+  color: #365338;
+  text-decoration: none;
+}
+
+/* About me page */
+div.aboutMe {
+  margin: 10px 5px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgb(216, 210, 210);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+section.bio > p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 5px 10px;
+}
+
+section.contactIcons {
+  padding: 5px;
+  margin: 5px 0px;
+  background-color: #b5b8b7;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.contactIcons a:hover {
+  color: rgba(41, 153, 37, 0.925);
+}
+
+section.contactIcons > a {
+  color: #365338;
+  text-decoration: none;
+  padding: 10px;
 }
