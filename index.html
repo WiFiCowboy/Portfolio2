@@ -21,21 +21,27 @@
   </head>
   <body>
     <div class="nav-container">
-      <nav role="navigation navbar-collapse">
-        <input type="checkbox" id="nav-toggle" />
-        <label for="nav-toggle" class="burger-menu">
-          <i class="fas fa-bars"></i>
-        </label>
-        <div class="left-menu">
-          <a href="#mainH1">Home</a>
-          <a href="#projectSection">Projects</a>
-          <a class="mobileVeiwAboutMe" href="#aboutH2">About Me</a>
-        </div>
-      </nav>
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#mainDiv" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="#projectsDiv" class="nav-links">Projects</a>
+                </li>
+                <li>
+                    <a href="#aboutDiv" class="nav-links">About Me</a>
+                </li>
+            </ul>
+    </nav>
+
     </div>
 
     <main role="main">
-      <div class="mainPage">
+      <div class="mainPage" id="mainDiv">
         <section class="headline">
           <h1>
             Hello, My name is Humberto Hernandez. I’m a full-stack developer and
@@ -51,7 +57,7 @@
         </section>
       </div>
 
-      <div class="ProjectPage">
+      <div class="ProjectPage" id="projectsDiv">
         <section class="pageTitle">
           <h2>My Projects</h2>
         </section>
@@ -73,16 +79,16 @@
           <i class="devicon-jquery-plain-wordmark"></i>
         </section>
         <section class="repoAndLive">
-          <a href="https://github.com/WiFiCowboy/HTML-wireframe"
+          <a target="_blank" href="https://github.com/WiFiCowboy/HTML-wireframe"
             ><i class="devicon-github-plain-wordmark js-gitHubQuizRepo"></i
           ></a>
-          <a href="https://wificowboy.github.io/HTML-wireframe/"
+          <a target="_blank" href="https://wificowboy.github.io/HTML-wireframe/"
             ><i class="fas fa-play-circle js-liveApp"></i
           ></a>
         </section>
       </div>
 
-      <div class="aboutMe">
+      <div class="aboutMe" id="aboutDiv">
         <section class="pageTitle">
           <h2>About Me</h2>
         </section>
@@ -107,13 +113,13 @@
           </p>
         </section>
         <section class="contactIcons">
-          <a href="https://github.com/WiFiCowboy"
+          <a target="_blank" href="https://github.com/WiFiCowboy"
             ><i class="devicon-github-plain-wordmark js-gitHubAcct"></i
           ></a>
-          <a href="https://www.linkedin.com/in/humberto-hernandez-12081b132/"
+          <a target="_blank" href="https://www.linkedin.com/in/humberto-hernandez-12081b132/"
             ><i class="fab fa-linkedin-in js-linkdin"></i
           ></a>
-          <a href="mailto:"><i class="fas fa-envelope js-email"></i></a>
+          <a target="_blank" href="mailto:"><i class="fas fa-envelope js-email"></i></a>
         </section>
       </div>
     </main>

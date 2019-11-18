@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -16,79 +17,61 @@ p {
 }
 
 /* start navbar style */
-.nav-container {
-  width: 100%;
+/* div.nav-container {
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+} */
+
+.navbar {
   position: fixed;
+  width: 100%; 
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #3f6845 0%, #1d3633   100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 50px;
+  padding-bottom: 10px;
+
 }
-
-nav {
-  background-color: rgb(94, 93, 93);
-  max-width: 1720px;
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-}
-
-.left-menu {
-  grid-column: 1;
-}
-
-.logo {
-  grid-column: 2;
-}
-
-#nav-toggle,
-.burger-menu {
+.main-nav {
+  list-style-type: none;
   display: none;
 }
-
-.burger-menu {
-  width: 40px;
-  grid-column: 1;
-  align-self: center;
-  margin-left: 20px;
-}
-
-nav a {
-  color: white;
+.nav-links {
   text-decoration: none;
-  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
   font-family: "Exo", sans-serif;
-  transition: 0.3s all ease-in-out;
 }
 
-nav a:hover {
-  opacity: 0.7;
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
 }
 
-.left-menu a {
-  padding: 10px 0;
-  margin-left: 15px;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.5px;
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer; 
+  color: rgba(255,255,255,0.8);
+  font-size: 24px;
 }
 
-.logo {
-  font-size: 40px;
-  padding: 1rem;
-}
-
-.left-menu {
-  grid-column: 1;
-  align-self: center;
+.active {
+  display: block;
 }
 /* end navbar style */
 
 /* for testing */
 main {
-  background-color: grey;
+  background-color: #59838f;
+  padding-bottom: 20px;
+  padding-top: 40px;
 }
 
 /* main page */
 div.mainPage {
-  background-color: grey;
+  background-color: #59838f;
   padding: 50px 20px;
 }
 
@@ -119,7 +102,7 @@ section.myImage {
 div.ProjectPage {
   margin: 10px 5px;
   border-radius: 15px 15px 15px 15px;
-  background-color: rgb(216, 210, 210);
+  background-color: #3f6845;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -129,7 +112,7 @@ div.ProjectPage {
 }
 
 section.projectImage {
-  background-color: #b5b8b7;
+  background-color: #627a4a;
   padding: 5px 10px;
   border-radius: 15px 15px 15px 15px;
 }
@@ -158,7 +141,7 @@ section.displayTech {
 section.repoAndLive {
   padding: 5px;
   margin: 5px 0px;
-  background-color: #b5b8b7;
+  background-color: #627a4a;
   border-radius: 15px 15px 15px 15px;
 }
 
@@ -167,7 +150,7 @@ section.repoAndLive {
 }
 
 section.repoAndLive > a {
-  color: #365338;
+  color: #1d3633;
   text-decoration: none;
 }
 
@@ -175,7 +158,7 @@ section.repoAndLive > a {
 div.aboutMe {
   margin: 10px 5px;
   border-radius: 15px 15px 15px 15px;
-  background-color: rgb(216, 210, 210);
+  background-color: #3f6845;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -195,7 +178,7 @@ section.bio > p {
 section.contactIcons {
   padding: 5px;
   margin: 5px 0px;
-  background-color: #b5b8b7;
+  background-color: #627a4a;
   border-radius: 15px 15px 15px 15px;
 }
 
@@ -204,7 +187,71 @@ section.contactIcons {
 }
 
 section.contactIcons > a {
-  color: #365338;
+  color: #1d3633;
   text-decoration: none;
   padding: 10px;
 }
+
+/* tablet style */
+@media screen and (min-width:480px) {
+  main {
+    padding: 60px 50px 20px 50px;
+  }
+
+  .selfImage {
+    border-radius: 15px 15px 15px 15px;
+    width: 350px;
+    height: 350px;
+    padding: 0px 5px;
+    margin-top: 20px;
+    object-fit: cover;
+  }
+
+  section.headline h1 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 36px;
+    padding: 0px 5px;
+  }
+
+  div.aboutMe {
+    margin-top: 40px;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+  }
+
+  .main-nav {
+      display: flex;
+      margin-right: 30px;
+      padding-bottom: 20px;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-end;
+  }
+
+  .main-nav li {
+      margin: 0;  
+  }
+
+  .nav-links {
+      margin-left: 40px;
+  }
+
+  .navbar-toggle {
+      display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+      color: rgba(255, 255, 255, 1);
+  }
