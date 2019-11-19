@@ -62,7 +62,6 @@ p {
 }
 /* end navbar style */
 
-/* for testing */
 main {
   background-color: #59838f;
   padding-bottom: 20px;
@@ -223,10 +222,6 @@ section.contactIcons > a {
 
 @media screen and (min-width: 800px) {
 
-  .hidden {
-    display: none;
-  }
-
   .navbar {
       display: flex;
       justify-content: space-between;
@@ -250,6 +245,7 @@ section.contactIcons > a {
 
   .nav-links {
       margin-left: 40px;
+      font-size: 20px;
   }
 
   .navbar-toggle {
@@ -260,3 +256,93 @@ section.contactIcons > a {
   .nav-links:hover {
       color: rgba(255, 255, 255, 1);
   }
+
+  main {
+    background-color: #59838f;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  
+  /* main page */
+  div.mainPage {
+    background-color: #59838f;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  section.headline h1 {
+    font-size: 35px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 48px;
+    padding: 10px 50px 0px 0px ;
+  }
+    
+  .selfImage {
+    border-radius: 15px 15px 15px 15px;
+    width: 350px;
+    height: 370px;
+    padding: 0px 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  
+  /* projects page */
+div.ProjectPage {
+  margin: 10px 5px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #3f6845;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+section.projectImage {
+  background-color: #627a4a;
+  padding: 5px 10px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#quizAppImg {
+  background-size: cover;
+  width: 200px;
+  height: 300px;
+  margin-top: 10px;
+}
+
+section.displayTech {
+  padding: 10px 0px;
+}
+
+.devicon-html5-plain-wordmark,
+.devicon-css3-plain-wordmark,
+.devicon-javascript-plain,
+.devicon-jquery-plain-wordmark,
+.devicon-github-plain-wordmark,
+.fas {
+  font-size: 30px;
+  padding: 5px;
+}
+
+section.repoAndLive {
+  padding: 5px;
+  margin: 5px 0px;
+  background-color: #627a4a;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.repoAndLive a:hover {
+  color: rgba(41, 153, 37, 0.925);
+}
+
+section.repoAndLive > a {
+  color: #1d3633;
+  text-decoration: none;
+}
+
+}
