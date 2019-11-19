@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -16,12 +20,11 @@ p {
   font-family: "Exo", sans-serif;
 }
 
+#projectDescription {
+  display: none;
+}
+
 /* start navbar style */
-/* div.nav-container {
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-} */
 
 .navbar {
   position: fixed;
@@ -121,6 +124,10 @@ section.projectImage {
   width: 200px;
   height: 300px;
   margin-top: 10px;
+}
+
+#desktopprojectImage {
+  display: none;
 }
 
 section.displayTech {
@@ -263,6 +270,18 @@ section.contactIcons > a {
     padding-top: 40px;
   }
   
+  h4 {
+    font-size: 25px;
+  }
+
+  p {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    padding: 5px 10px;
+  }
+
   /* main page */
   div.mainPage {
     background-color: #59838f;
@@ -302,18 +321,36 @@ div.ProjectPage {
   padding: 10px 10px;
 }
 
+.pageTitle {
+  padding: 20px 0px;
+  font-size: 28px;
+}
+
 section.projectImage {
   background-color: #627a4a;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 15px 15px 15px 15px;
 }
 
 #quizAppImg {
-  background-size: cover;
-  width: 200px;
-  height: 300px;
-  margin-top: 10px;
+  display: none;
 }
+
+#desktopprojectImage {
+  display: block;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  margin-top: 10px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.projectTitle {
+  padding: 10px 0px;
+  font-size: 25px;
+}
+
+
 
 section.displayTech {
   padding: 10px 0px;
@@ -325,8 +362,8 @@ section.displayTech {
 .devicon-jquery-plain-wordmark,
 .devicon-github-plain-wordmark,
 .fas {
-  font-size: 30px;
-  padding: 5px;
+  font-size: 40px;
+  padding: 10px;
 }
 
 section.repoAndLive {
@@ -343,6 +380,24 @@ section.repoAndLive {
 section.repoAndLive > a {
   color: #1d3633;
   text-decoration: none;
+}
+
+/* show only durring desktop */
+#projectDescription {
+  display: inline-block;
+  padding: 40px 40px 20px 40px;
+}
+
+section.bio {
+  padding: 40px 40px 20px 40px;
+}
+
+section.bio > p {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  padding: 5px 10px;
 }
 
 }
