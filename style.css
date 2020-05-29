@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #141d26;
 }
 h1,
 h2,
@@ -33,8 +33,8 @@ p {
   position: fixed;
   width: 100%;
   font-size: 18px;
-  background-image: linear-gradient(260deg, #3f6845 0%, #1d3633 100%);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(260deg, #538659 0%, #205927 100%);
+  border: 1px solid #396b3f;
   padding-top: 50px;
   padding-bottom: 10px;
 }
@@ -68,24 +68,23 @@ p {
 /* end navbar style */
 
 main {
-  /* background-color: #59838f; */
   padding-bottom: 20px;
   padding-top: 40px;
 }
 
 /* main page */
 div.mainPage {
-  /* background-color: #59838f; */
   padding: 50px 20px;
 }
 
 section.headline h1 {
+  color: #538659;
   font-size: 24px;
   text-align: left;
   font-weight: 400;
   line-height: 30px;
   padding: 0px 5px;
-  text-shadow: 3px 3px 4px rgba(92, 92, 92, 0.87);
+  text-shadow: 3px 3px 4px rgba(32, 89, 39, 0.87);
 }
 
 section.myImage {
@@ -98,23 +97,24 @@ section.myImage {
   width: 300px;
   height: 300px;
   padding: 0px 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 30px 15px;
+
   object-fit: cover;
 }
 
 /* project page */
 .project-wrapper-title {
+  color: #538659;
   text-align: center;
-  text-shadow: 3px 3px 4px rgba(92, 92, 92, 0.87);
+  text-shadow: 3px 3px 4px rgba(32, 89, 39, 0.87);
 }
 
 .project-wrapper {
   text-align: center;
   padding: 10px;
+  margin: 30px 15px;
   border-radius: 15px 15px 15px 15px;
-  background-color: #3f6845;
-  width: 100%;
+  background-color: #538659;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,11 +129,16 @@ p {
   padding: 10px;
 }
 
+.project-container > h3,
+h4 {
+  color: #205927;
+}
+
 .project-container {
   border-radius: 15px 15px 15px 15px;
-  background-color: rgb(165, 165, 165);
+  background-color: #a4c3a8;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid #205927;
   margin: 10px;
 }
 
@@ -144,7 +149,7 @@ p {
 
 .project-image img {
   border-radius: 15px 15px 15px 15px;
-  border: 10px solid black;
+  border: 10px solid #205927;
 }
 
 .project-discription {
@@ -159,17 +164,29 @@ p {
   padding: 10px 10px;
 }
 
-.project-links a {
+.project-stack > i {
+  color: #205927;
+}
+
+.project-links {
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  min-height: 20px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.project-links > a {
+  color: #205927;
   text-decoration: none;
   padding: 10px;
-  color: rgb(2, 2, 2);
-  max-height: 20px;
-  height: 100%;
-  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .project-links a:hover {
-  color: #068880;
+  color: #538659;
 }
 
 #quizAppImg {
@@ -181,9 +198,9 @@ p {
 
 /* About me page */
 div.aboutMe {
-  margin: 10px 5px;
+  margin: 30px 15px;
   border-radius: 15px 15px 15px 15px;
-  background-color: #3f6845;
+  background-color: #538659;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -201,21 +218,30 @@ section.bio > p {
   padding: 5px 10px;
 }
 
-section.contactIcons {
-  padding: 5px;
-  margin: 5px 0px;
-  background-color: #627a4a;
+.contactIcons {
+  width: 100%;
+  text-align: center;
+  min-height: 20px;
+  background-color: #a4c3a8;
   border-radius: 15px 15px 15px 15px;
 }
 
 .contactIcons a:hover {
-  color: #068880;
+  color: #76a17b;
 }
 
-section.contactIcons > a {
-  color: black;
+.contactIcons > a {
+  color: #205927;
   text-decoration: none;
   padding: 10px;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.fa-linkedin-in {
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 /* tablet style */
@@ -394,7 +420,7 @@ section.contactIcons > a {
   .devicon-github-plain-wordmark,
   .fa-linkedin-in,
   .fas {
-    font-size: 40px;
+    font-size: 60px;
     padding: 10px;
   }
 
