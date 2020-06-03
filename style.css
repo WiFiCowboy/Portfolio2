@@ -55,11 +55,16 @@ p {
 
 .navbar-toggle {
   position: absolute;
-  top: 10px;
+  padding: 5px;
+  top: 7px;
   right: 20px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
+  font-size: 30px;
+}
+
+.fa-bars {
+  text-align: center;
 }
 
 .active {
@@ -98,7 +103,6 @@ section.myImage {
   height: 300px;
   padding: 0px 5px;
   margin: 30px 15px;
-
   object-fit: cover;
 }
 
@@ -243,7 +247,7 @@ a > .fa-play-circle {
   color: black;
 }
 
-#quizAppImg {
+.quizAppImg {
   background-size: cover;
   width: 200px;
   height: 300px;
@@ -331,6 +335,11 @@ section.bio > p {
     font-weight: 600;
     line-height: 36px;
     padding: 0px 5px;
+  }
+
+  .quizAppImg {
+    width: 300px;
+    height: 400px;
   }
 
   div.aboutMe {
@@ -442,11 +451,9 @@ section.bio > p {
     border-radius: 15px 15px 15px 15px;
   }
 
-  #quizAppImg {
-    background-size: cover;
+  .quizAppImg {
     width: 400px;
     height: 600px;
-    margin-top: 10px;
   }
 
   #desktopprojectImage {
