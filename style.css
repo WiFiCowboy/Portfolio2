@@ -1,4 +1,3 @@
-/* start mobile first styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,8 +26,6 @@ p {
   display: none;
 }
 
-/* start navbar style */
-
 .navbar {
   position: fixed;
   width: 100%;
@@ -37,6 +34,7 @@ p {
   border: 1px solid #396b3f;
   padding-top: 50px;
   padding-bottom: 10px;
+  text-align: center;
 }
 .main-nav {
   list-style-type: none;
@@ -51,13 +49,14 @@ p {
 .main-nav li {
   text-align: center;
   margin: 15px auto;
+  padding-left: 35px;
 }
 
 .navbar-toggle {
   position: absolute;
   padding: 5px;
+  display: inline-block;
   top: 7px;
-  right: 20px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
   font-size: 30px;
@@ -70,14 +69,12 @@ p {
 .active {
   display: block;
 }
-/* end navbar style */
 
 main {
   padding-bottom: 20px;
   padding-top: 40px;
 }
 
-/* main page */
 div.mainPage {
   padding: 50px 20px;
 }
@@ -106,11 +103,9 @@ section.myImage {
   object-fit: cover;
 }
 
-/* project page */
 .project-wrapper-title {
   color: #538659;
   text-align: center;
-  /* text-shadow: 3px 3px 4px rgba(32, 89, 39, 0.87); */
   text-shadow: -1px 1px 0 #000;
 }
 
@@ -254,7 +249,6 @@ a > .fa-play-circle {
   margin-top: 10px;
 }
 
-/* About me page */
 div.aboutMe {
   margin: 30px 15px;
   border-radius: 15px 15px 15px 15px;
@@ -310,7 +304,6 @@ section.bio > p {
   animation: animated-border 1.5s infinite;
 }
 
-/* tablet style */
 @media screen and (min-width: 480px) {
   main {
     padding: 60px 50px 20px 50px;
@@ -384,7 +377,6 @@ section.bio > p {
   }
 
   main {
-    /* background-color: #59838f; */
     padding-bottom: 20px;
     padding-top: 40px;
   }
@@ -401,9 +393,7 @@ section.bio > p {
     padding: 5px 10px;
   }
 
-  /* main page */
   div.mainPage {
-    /* background-color: #59838f; */
     padding: 50px 20px;
     display: flex;
     justify-content: flex-start;
@@ -427,7 +417,6 @@ section.bio > p {
     object-fit: cover;
   }
 
-  /* projects page */
   div.ProjectPage {
     margin: 10px 5px;
     border-radius: 15px 15px 15px 15px;
@@ -509,7 +498,6 @@ section.bio > p {
     text-decoration: none;
   }
 
-  /* show only durring desktop */
   #projectDescription {
     display: inline-block;
     padding: 40px 40px 20px 40px;

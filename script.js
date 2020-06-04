@@ -1,4 +1,4 @@
-// Vanilla JS
+// Vanilla JS DOM manipulation
 let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById("js-navbar-toggle");
 
